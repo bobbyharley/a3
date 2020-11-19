@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Room</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                <table>
+                    <tr>
+                        <td id="windowLeft">
+                            <div id="messages"></div>
+                            <form id="msgForm">
+                                <input id="msg" type="text" required autocomplete="off" />
+                            </form>
+                        </td>
+                        <td id="windowRight">
+                            <h1>ONLINE USERS:</h1>
+                            <div id="users"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/client.js"></script>
+    </body>
+</html>
